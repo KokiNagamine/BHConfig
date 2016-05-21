@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2806A6B7-883F-43E5-88B9-C718618DF463}</ProjectGuid>
+    <ProjectGuid>{60D6DBB7-0F92-49C6-9923-2E818E886C93}</ProjectGuid>
     <RootNamespace>Config</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <Keyword>MFCProj</Keyword>
@@ -186,18 +186,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h" />
-    <ClInclude Include="ConfigDoc.h" />
-    <ClInclude Include="ConfigView.h" />
-    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="ConfigDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Config.cpp" />
-    <ClCompile Include="ConfigDoc.cpp" />
-    <ClCompile Include="ConfigView.cpp" />
-    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ConfigDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -209,14 +205,10 @@
     <ResourceCompile Include="Config.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\Config.ico" />
-    <Image Include="res\ConfigDoc.ico" />
-    <Image Include="res\Toolbar.bmp" />
-    <Image Include="res\Toolbar256.bmp" />
-    <Image Include="UserImages.bmp" />
+    <None Include="res\Config.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\Config.rc2" />
+    <Image Include="res\Config.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
